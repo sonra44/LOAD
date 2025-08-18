@@ -22,6 +22,13 @@ def test_actuator_invalid_thrust():
     assert result.error_code == "INVALID_THRUST"
     assert "Thrust" in result.message
 
+def test_actuator_thrust_above_upper_bound():
+    controller = ActuatorController()
+    result = controller.set_thrust(1.1)
+    assert not result.success
+    assert result.error_code == "INVALID_THRUST"
+    assert "Thrust" in result.message
+
 
 def test_fsm_transition_success():
     handler = FSMHandler()
