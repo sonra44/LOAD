@@ -1,8 +1,21 @@
+# Ignore most of extracted project except selected source files
 QIKI_DTMP/*
-!QIKI_DTMP/docs/
-QIKI_DTMP/docs/*
-!QIKI_DTMP/docs/file_analysis/
-!QIKI_DTMP/docs/file_analysis/*.md
+!QIKI_DTMP/services/
+QIKI_DTMP/services/*
+!QIKI_DTMP/services/q_core_agent/
+QIKI_DTMP/services/q_core_agent/*
+!QIKI_DTMP/services/q_core_agent/state/
+QIKI_DTMP/services/q_core_agent/state/*
+!QIKI_DTMP/services/q_core_agent/state/types.py
+!QIKI_DTMP/services/q_core_agent/state/store.py
+!QIKI_DTMP/services/q_core_agent/state/tests/
+QIKI_DTMP/services/q_core_agent/state/tests/*
+!QIKI_DTMP/services/q_core_agent/state/tests/test_types.py
+!QIKI_DTMP/services/q_sim_service/
+QIKI_DTMP/services/q_sim_service/*
+!QIKI_DTMP/services/q_sim_service/main.py
 QIKI_DTMP.zip
 __pycache__/
+ codex/implement-operationresult-structure-and-handling
 *.pyc
+======= main
