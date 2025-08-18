@@ -4,3 +4,4 @@ QIKI_DTMP/docs/*
 !QIKI_DTMP/docs/file_analysis/
 !QIKI_DTMP/docs/file_analysis/*.md
 QIKI_DTMP.zip
+__pycache__/
