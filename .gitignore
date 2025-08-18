@@ -16,3 +16,6 @@ QIKI_DTMP/services/q_sim_service/*
 !QIKI_DTMP/services/q_sim_service/main.py
 QIKI_DTMP.zip
 __pycache__/
+ codex/implement-operationresult-structure-and-handling
+*.pyc
+======= main
