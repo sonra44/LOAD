@@ -32,11 +32,14 @@ class QSimService:
         timestamp = Timestamp()
         timestamp.GetCurrentTime()
         world_state = self.world_model.get_state()
+        # Safely extract position.x, defaulting to 0.0 if missing
+        position = world_state.get("position", {})
+        x_value = position.get("x", 0.0)
         return SensorReading(
             sensor_id=UUID(value="sim_lidar_front"),
             sensor_type=self.config.get("sim_sensor_type", 1), # LIDAR
             timestamp=timestamp,
-            scalar_data=world_state["position"]["x"] # Example: return X position as scalar data
+            scalar_data=x_value # Example: return X position as scalar data
         )
 
     def receive_actuator_command(self, command: ActuatorCommand):
