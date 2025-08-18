@@ -163,7 +163,7 @@ def next_snapshot(
     new_version = current.version + version_increment
     
     # Новая история переходов
-    new_history = current.history if current.history else tuple()
+    new_history = current.history or tuple()
     if transition:
         new_history = new_history + (transition,)
         
