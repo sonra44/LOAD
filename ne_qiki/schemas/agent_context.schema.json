@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "bios_status": {
+      "type": "object",
+      "properties": {
+        "ok": {"type": "boolean"}
+      },
+      "required": ["ok"]
+    },
+    "fsm_state": {
+      "type": "string"
+    },
+    "sensor_data": {
+      "type": "object"
+    }
+  },
+  "required": ["bios_status", "fsm_state"]
+}

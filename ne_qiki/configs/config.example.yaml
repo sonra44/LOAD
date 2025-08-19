@@ -1,0 +1,34 @@
+window: 16
+in_dim: 32
+num_classes: 6
+param_dim: 4
+topk: 3
+min_confidence: 0.55
+time_budget_ms: 8
+calibration:
+  temperature: 1.2
+action_catalog:
+  actions:
+    - name: HOLD_POSITION
+      params:
+        duration: [0.1, 5.0]
+    - name: COOLING_BOOST
+      params:
+        intensity: [0.1, 1.0]
+    - name: THROTTLE_DOWN
+      params:
+        level: [0.0, 1.0]
+    - name: THROTTLE_UP
+      params:
+        level: [0.0, 1.0]
+    - name: ROTATE_LEFT
+      params:
+        angle: [0.0, 3.14]
+    - name: ROTATE_RIGHT
+      params:
+        angle: [0.0, 3.14]
+safety:
+  fsm_invariants:
+    - ERROR_STATE
+  bios_invariants:
+    - bios_ok
