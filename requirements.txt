@@ -1,0 +1,9 @@
+torch>=1.13
+onnxruntime>=1.14
+pyyaml
+numpy
+flask
+prometheus-client
+nats-py
+prompt_toolkit>=3.0
+requests

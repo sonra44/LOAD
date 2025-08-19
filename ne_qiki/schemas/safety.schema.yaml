@@ -1,0 +1,5 @@
+fsm_invariants:
+  - ERROR_STATE
+bios_invariants:
+  - bios_ok
+max_actions_per_tick: 3
